@@ -1,0 +1,33 @@
+.about 
+    width: 98%
+    margin-bottom: 70px
+    // FLEX PROPERTIES 
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    
+    .about_left
+        // FLEX PROPERTIES 
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-self: center
+        width: 48%
+        p, h2
+            &::selection
+                background: #ffffff
+                color: #02223B
+
+    .about_left-technologies
+        font-size: 25px
+        .fa-html5
+            color: #e34f26
+        .fa-css3-alt
+            color: #2965f1
+        .fa-sass
+            color: #A14DA0
+        .fa-js
+            color: #f7df1e
+
+    img 
+        width: 475px

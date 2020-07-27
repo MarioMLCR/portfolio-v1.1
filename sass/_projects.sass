@@ -1,0 +1,72 @@
+.projects
+    width: 70%
+    margin-bottom: 60px
+    .galery 
+        // FLEX PROPERTIES
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        .images
+            position: relative
+            width: 200px
+            height: 200px
+            margin-bottom: 20px
+        a 
+            margin-bottom: 20px
+            align-self: center
+            position: relative
+
+            img 
+                width: 200px
+                height: 200px
+                border-radius: 5px
+        .grad
+            width: 200px
+            height: 200px
+            border-radius: 5px
+            position: absolute
+            background: rgba(black , .0)
+            z-index: 40
+            transition: .3s
+            color: rgba(black , .0)
+            text-align: center
+            text-decoration: none
+            // box-shadow: 0 3px 1px -2px rgba(#fff, .2), 0 2px 2px 0 rgba(#fff, .14), 0 1px 5px 0 rgba(#fff, .12)
+            border: 2px solid rgba(white  , .1)
+            &:hover
+                transition: .3s
+                width: 200px
+                height: 200px
+                border-radius: 5px
+                position: absolute
+                background: rgba(black , .8)
+                z-index: 40
+                color: #ffffff
+                border: 2px solid rgba(white  , .0)
+            i 
+                font-size: 30px
+
+        .grad-2
+            width: 200px
+            height: 200px
+            border-radius: 5px
+            position: absolute
+            z-index: 32
+            transition: .3s
+            color: rgba(black , .0)
+            text-align: center
+            text-decoration: none
+            // box-shadow: 0 3px 1px -2px rgba(#fff, .2), 0 2px 2px 0 rgba(#fff, .14), 0 1px 5px 0 rgba(#fff, .12)
+            border: 2px solid rgba(white  , .1)
+            animation: bg-img 6s infinite
+
+    @keyframes bg-img
+        0%
+            opacity: 1
+            
+        50%
+            opacity: 0
+
+        100% 
+            opacity: 1
+            
